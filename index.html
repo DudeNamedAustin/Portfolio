@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131430141-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131430141-1');
+      </script>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <link href="https://fonts.googleapis.com/css?family=Khula:400,600" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
-      <link rel="stylesheet" href="glider/glider.min.css" type="text/css">
-      <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css" type="text/css">
+      <link rel="stylesheet" href="src/glider/glider.min.css" type="text/css">
+      <link rel="stylesheet" href="src/node_modules/sal.js/dist/sal.css" type="text/css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" type="text/css">
-      <link rel="stylesheet" href="css/main.css" type="text/css">
-      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+      <link rel="stylesheet" href="src/css/main.css" type="text/css">
+      <link rel="shortcut icon" type="image/x-icon" href="src/images/favicon.png">
       <title>Austin Smith | Front-End Developer</title>
    </head>
    <body>
@@ -27,15 +36,15 @@
       <div class="landing">
          <div class="landingWrapper" data-sal-duration="1200" data-sal="zoom-out" data-sal-delay="300">
             <div class="landingL" data-sal-duration="1200" data-sal="zoom-out" data-sal-delay="300">
-               <h1>AUSTIN<div class="whiteTheme">SMITH</div>
+               <h1>AUSTIN<span class="whiteTheme">SMITH</span>
                </h1>
-               <p>Front-End Developer <span>/</span> React</p>
+               <p id="hero">Front-End Developer <span>/</span> React</p>
             </div>
          </div>
       </div>
       <!-----  About Heading  ----->
       <div class="projectHeading" id="about">
-         <h2>ABOUT<div class="whiteTheme">ME</div>
+         <h2>ABOUT<span class="whiteTheme">ME</span>
          </h2>
          <div class="underline"></div>
       </div>
@@ -51,7 +60,7 @@
       </div>
       <!-----  Portfolio Section  ----->
       <div class="portfolio" data-sal-duration="1300" data-sal="slide-up" data-sal-delay="200">
-         <div class="glider-contain multiple">
+         <div class="glider-contain">
             <button class="glider-prev">
             <i class="fas fa-chevron-left"></i>
             </button>
@@ -59,42 +68,67 @@
                <div class="glider">
                   <figure>
                      <div class="aboutHeading">
-                        <h3>GAINZ<div class="whiteTheme">CALCULATOR</div></h3>
+                        <h3>GAINZ<span class="whiteTheme">CALCULATOR</span></h3>
                      </div>
-                     <img src="images/gainzcalc.png">
+                     <img src="src/images/gainzcalc.png">
                      <div class="project-info">
+                        <div class="project-skills">
+                           <span class="skill">HTML5</span>
+                           <span class="skill">CSS3</span>
+                           <span class="skill">Bootstrap 4</span>
+                           <span class="skill">JavaScript</span>
+                           <span class="skill">ES6</span>
+                        </div>
+                        <div class="description">
+                           Fitness website with calculators to determine certain measurements.
+                        </div>
                         <div class="project-links">
-                           Live Demo   Source Code
+                           <a href="https://gainzcalc.com" target="_blank"><div class="btn btn-outline">DEMO</div></a>
+                           <a href="https://github.com/DudeNamedAustin/FitnessWebsite" target="_blank"><div class="btn btn-outline">CODE</div></a>
                         </div>
                      </div>
                   </figure>
                   <figure>
                      <div class="aboutHeading">
-                        <h3>PORTFOLIO</h3>
+                        <h3>WEBSITE</h3>
                      </div>
-                     <img src="images/portfolio.png">
+                     <img src="src/images/portfolio.png">
                      <div class="project-info">
+                        <div class="project-skills">
+                           <span class="skill">HTML5</span>
+                           <span class="skill">CSS3</span>
+                           <span class="skill">SCSS</span>
+                           <span class="skill">JavaScript</span>
+                           <span class="skill">React</span>
+                        </div>
+                        <div class="description">
+                           Short but detailed description of what this website does.
+                        </div>
                         <div class="project-links">
+                           <a href="#" target="_blank"><div class="btn btn-outline">DEMO</div></a>
+                           <a href="https://github.com/DudeNamedAustin/" target="_blank"><div class="btn btn-outline">CODE</div></a>
                         </div>
                      </div>
                   </figure>
                   <figure>
                      <div class="aboutHeading">
-                        <h3>FITNESS SITE</h3>
+                        <h3>WEBSITE</h3>
                      </div>
-                     <img src="images/gainzcalc.png">
+                     <img src="src/images/portfolio.png">
                      <div class="project-info">
-                        <div class="project-links">
+                        <div class="project-skills">
+                           <span class="skill">HTML5</span>
+                           <span class="skill">CSS3</span>
+                           <span class="skill">SCSS</span>
+                           <span class="skill">JavaScript</span>
+                           <span class="skill">React</span>
                         </div>
-                     </div>
-                  </figure>
-                  <figure>
-                     <div class="aboutHeading">
-                        <h3>FITNESS SITE</h3>
-                     </div>
-                     <img src="images/portfolio.png">
-                     <div class="project-info">
+                        <div class="description">
+                           Short but detailed description of what this website does.
+                        </div>
                         <div class="project-links">
+                           <a href="#" target="_blank"><div class="btn btn-outline">DEMO</div></a>
+                           <a href="https://github.com/DudeNamedAustin/" target="_blank"><div class="btn btn-outline">CODE</div></a>
                         </div>
                      </div>
                   </figure>
@@ -108,7 +142,7 @@
       </div>
       <!---Footer-->
       <div class="footer" id="contact">
-         <h2>CONTACT<div class="whiteTheme">ME</div></h2>
+         <h2>CONTACT<span class="whiteTheme">ME</span></h2>
          <div class="underline"></div>
          <div class="footIcons">
             <a href="mailto:austin@austinlsmith.com">Email</a>
@@ -121,8 +155,9 @@
       <!-- JS -->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-      <script src="glider/glider.min.js"></script>
-      <script src="node_modules/sal.js/dist/sal.js"></script>
-      <script src="js/script.js"></script>
+      <script src="src/glider/glider.min.js"></script>
+      <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+      <script src="src/node_modules/sal.js/dist/sal.js"></script>
+      <script src="src/js/script.js"></script>
    </body>
 </html>
