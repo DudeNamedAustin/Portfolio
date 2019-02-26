@@ -69,6 +69,7 @@ h3 {
 
 span {
 	color: var(--accent-color);
+	font-weight: 600;
 }
 
 .whiteTheme {
@@ -79,13 +80,14 @@ span {
 p {
 	color: var(--text-color);
 	opacity: 0.8;
-	font-weight: 600;
+	font-weight: 400;
 	margin-top: 20px;
 	font-size: 20px;
 }
 
 #hero {
-	margin-left: 8vw;
+	margin-left: 6vw;
+	font-weight: 600;
 }
 
 a {
