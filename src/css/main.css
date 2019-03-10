@@ -50,7 +50,7 @@ body {
 
 h1 {
 	font-family: var(--font-aqua);
-	font-size: 74px;
+	font-size: 600%;
 	color: var(--text-color);
 }
 
@@ -63,7 +63,7 @@ h2 {
 
 h3 {
 	font-family: var(--font-aqua);
-	font-size: 35px;
+	font-size: 250%;
 	color: var(--text-color);
 }
 
@@ -154,7 +154,7 @@ a:hover {
 
 .aboutMe {
 	padding: 1rem;
-	font-size: 20px;
+	font-size: 150%;
 	line-height: 1.5;
 	padding: 2vh 8.1%;
 }
@@ -342,7 +342,7 @@ a:hover {
 		font-size: 40px;
 	}
 	.aboutMe {
-		font-size: 3.4vw;
+		font-size: 150%;
 	}
 	.portfolio {
 		padding: 3rem;
