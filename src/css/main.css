@@ -105,6 +105,10 @@ a:hover {
 	color: var(--accent-color);
 }
 
+.pic {
+	transform: scale(0.8,0.8);
+}
+
 
 /*---------- Nav ----------*/
 
@@ -342,7 +346,7 @@ a:hover {
 		font-size: 40px;
 	}
 	.aboutMe {
-		font-size: 150%;
+		font-size: 100%;
 	}
 	.portfolio {
 		padding: 3rem;
