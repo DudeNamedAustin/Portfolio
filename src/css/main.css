@@ -1,13 +1,13 @@
 @font-face {
-	font-family: 'Aqua';
-	src: url(../fonts/aqua.ttf);
+	font-family: 'Jaapoki';
+	src: url(../fonts/Jaapokk-Regular.otf);
 }
 
 :root {
 	--background-color: #1c1d25;
 	--accent-color: #57a3e4;
 	--text-color: #707493;
-	--font-aqua: 'Aqua', sans-serif;
+	--font-Jaapoki: 'Jaapoki', sans-serif;
 	--font-khula: 'Khula', sans-serif;
 }
 
@@ -37,7 +37,7 @@ canvas {
 
 html {
 	font-family: var(--font-khula);
-	font-weight: 600;
+	font-weight: 300;
 	overflow: -moz-scrollbars-none;
 }
 
@@ -49,27 +49,27 @@ body {
 }
 
 h1 {
-	font-family: var(--font-aqua);
+	font-family: var(--font-Jaapoki);
 	font-size: 600%;
 	color: var(--text-color);
 }
 
 h2 {
-	font-family: var(--font-aqua);
+	font-family: var(--font-Jaapoki);
 	font-size: 50px;
 	color: var(--text-color);
 	padding-top: 3vh;
 }
 
 h3 {
-	font-family: var(--font-aqua);
+	font-family: var(--font-Jaapoki);
 	font-size: 250%;
 	color: var(--text-color);
 }
 
 span {
 	color: var(--accent-color);
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .whiteTheme {
@@ -86,7 +86,6 @@ p {
 }
 
 #hero {
-	margin-left: 6vw;
 	font-weight: 600;
 }
 
@@ -146,6 +145,7 @@ a:hover {
 
 .landingL {
 	margin-top: 4em;
+	text-align: center !important;
 }
 
 
@@ -342,7 +342,7 @@ a:hover {
 		font-size: 15px;
 	}
 	.coolFont {
-		font-family: var(--font-aqua);
+		font-family: var(--font-Jaapoki);
 		font-size: 40px;
 	}
 	.aboutMe {
@@ -366,9 +366,6 @@ a:hover {
 		margin-left: 5vw;
 		margin-right: 5vw;
 		font-size: 14px;
-	}
-	#hero {
-		margin-left: 0;
 	}
 	.project-skills {
 		display: none;
