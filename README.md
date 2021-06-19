@@ -1,4 +1,4 @@
-# My Portfolio (No Longer Active)
+# My Portfolio (In-Progress)
 
 ## LINK:
 
@@ -6,16 +6,14 @@
 
 ## SUMMARY
 
+Currently in the progress of redoing the entire thing.
+
 Used to display my personal projects and accomplishments.
 
 ## BUILT WITH:
 
 **CLIENT SIDE**: HTML5, CSS3, Bootstrap4, JS(ES6)
 
-**LIBRARIES**:
+**DEPENDENCIES**:
 
 [Particles.js](https://github.com/VincentGarreau/particles.js): Generate the particle background
-
-[Glider.js](https://github.com/NickPiscitelli/Glider.js): Display projects
-
-[Sal.js](https://github.com/mciastek/sal): Scroll animations

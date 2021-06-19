@@ -1,250 +1,251 @@
 @font-face {
-	font-family: 'Jaapoki';
-	src: url(../fonts/Jaapokk-Regular.otf);
+  font-family: "Jaapoki";
+  src: url(../fonts/Jaapokk-Regular.otf);
 }
 
 :root {
-	--background-color: #1c1d25;
-	--accent-color: #57a3e4;
-	--text-color: #707493;
-	--font-Jaapoki: 'Jaapoki', sans-serif;
-	--font-khula: 'Khula', sans-serif;
+  --background-color: #1c1d25;
+  --accent-color: #57a3e4;
+  --text-color: #707493;
+  --font-Jaapoki: "Jaapoki", sans-serif;
+  --font-khula: "Khula", sans-serif;
 }
 
 #particles-js {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 canvas {
-	height: 100vh;
-  z-index: -10;
+  height: 100vh;
+  z-index: -1; /* Change to 0 for fun bg stuff */
   position: fixed;
-	top: 0px;
-	left: 0px;
+  top: 0px;
+  left: 0px;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
 }
 
 html {
-	font-family: var(--font-khula);
-	font-weight: 300;
-	overflow: -moz-scrollbars-none;
+  font-family: var(--font-khula);
+  font-weight: 300;
+  overflow: -moz-scrollbars-none;
 }
 
 body {
-	width: 75%;
-	margin: auto;
-	background-color: var(--background-color);
-	color: var(--text-color);
+  width: 75%;
+  margin: auto;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 h1 {
-	font-family: var(--font-Jaapoki);
-	font-size: 600%;
-	color: var(--text-color);
+  font-family: var(--font-Jaapoki);
+  font-size: 600%;
+  color: var(--text-color);
 }
 
 h2 {
-	font-family: var(--font-Jaapoki);
-	font-size: 50px;
-	color: var(--text-color);
-	padding-top: 3vh;
+  font-family: var(--font-Jaapoki);
+  font-size: 50px;
+  color: var(--text-color);
+  padding-top: 3vh;
 }
 
 h3 {
-	font-family: var(--font-Jaapoki);
-	font-size: 250%;
-	color: var(--text-color);
+  font-family: var(--font-Jaapoki);
+  font-size: 250%;
+  color: var(--text-color);
 }
 
 span {
-	color: var(--accent-color);
-	font-weight: 400;
+  color: var(--accent-color);
+  font-weight: 400;
 }
 
 .whiteTheme {
-	color: #fff;
-	display: inline;
+  color: #fff;
+  display: inline;
 }
 
 p {
-	color: var(--text-color);
-	opacity: 0.8;
-	font-weight: 400;
-	margin-top: 20px;
-	font-size: 20px;
+  color: var(--text-color);
+  opacity: 0.8;
+  font-weight: 400;
+  margin-top: 0px;
+  font-size: 23px;
 }
 
 #hero {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 a {
-	text-decoration: none;
-	cursor: pointer;
-	color: var(--text-color);
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition: all 0.1s ease-in-out;
-	-ms-transition: all 0.1s ease-in-out;
-	-o-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-color);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 a:hover {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .pic {
-	transform: scale(0.8,0.8);
+  transform: scale(0.8, 0.8);
 }
-
 
 /*---------- Nav ----------*/
 
 .nav {
-	display: flex;
-	align-items: center;
-	height: 80px;
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
 
 .navIcons {
-	flex: 1;
-	text-align: right;
+  flex: 1;
+  text-align: right;
 }
 
 .navIcons a {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: right;
-	margin-left: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  margin-left: 40px;
 }
-
 
 /*---------- Landing ----------*/
 
 .landing {
-	height: 80vh;
-	position: relative;
+  height: 80vh;
+  position: relative;
 }
 
 .landingWrapper {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
 }
 
 .landingL {
-	margin-top: 4em;
-	text-align: center !important;
+  margin-top: 4em;
+  text-align: center !important;
 }
-
 
 /*--------- About Me -----------*/
 
 .aboutHeading {
-	text-align: center;
-	padding-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .aboutMe {
-	padding: 1rem;
-	font-size: 150%;
-	line-height: 1.5;
-	padding: 2vh 8.1%;
+  padding: 1rem;
+  font-size: 150%;
+  line-height: 1.5;
+  padding: 2vh 8.1%;
 }
-
 
 /*---------- Project Heading----------*/
 
 .projectHeading {
-	text-align: center;
-	margin-bottom: 2em;
-	padding-top: 1vh;
+  text-align: center;
+  margin-bottom: 2em;
+  padding-top: 1vh;
 }
 
 .underline {
-	display: block;
-	height: 3px;
-	width: 10vw;
-	margin: 15px auto auto 43%;
-	background-color: var(--accent-color);
+  display: block;
+  height: 3px;
+  width: 10vw;
+  margin: 15px auto auto 43%;
+  background-color: var(--accent-color);
 }
-
 
 /*---------- Projects ----------*/
 
 .portfolio {
-	margin-top: 5vh;
-	padding: 1.5rem 10rem 3rem 10rem;
+  margin-top: 5vh;
+  padding: 1.5rem 10rem 3rem 10rem;
 }
 
 .project {
-	margin: 4vh 0;
-	overflow: hidden;
-	text-align: left;
+  margin: 4vh 0;
+  overflow: hidden;
+  text-align: left;
 }
 
 .glide {
-	padding: 0rem 5rem 0.5rem 5rem;
+  padding: 0rem 5rem 0.5rem 5rem;
 }
 
 .project-info {
-	padding-top: 2vh;
-	text-align: center;
+  padding-top: 2vh;
+  text-align: center;
 }
 
 .project-skills {
-	padding: 15px;
+  padding: 15px;
 }
 
 .skill {
-	border-radius: 0.2rem;
-	border: 1px solid var(--accent-color);
-	padding: 5px 20px;
+  border-radius: 0.2rem;
+  border: 1px solid var(--accent-color);
+  padding: 5px 20px;
   margin: 10px;
-	font-size: .85em;
-	color: white;
+  font-size: 0.85em;
+  color: white;
 }
 
 .description {
-	padding: 20px;
+  padding: 20px;
 }
 
 .project-links {
-	padding-top: 2vh;
-	display: inline;
+  padding-top: 2vh;
+  display: inline;
 }
 
 .btn {
-	border-radius: 0.2rem;
-	border: 1px solid var(--accent-color);
-	padding: 4px 20px 0px 20px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	font-size: 1em;
-	color: white;
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-					user-select: none;
-	background-color: transparent;
-	-webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  border-radius: 0.2rem;
+  border: 1px solid var(--accent-color);
+  padding: 4px 20px 0px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .btn-outline {
@@ -260,114 +261,113 @@ a:hover {
 /*---------- Footer ----------*/
 
 .footer {
-	padding-top: 3em;
-	padding-bottom: 7em;
-	text-align: center;
-	height: 200px;
+  padding-top: 3em;
+  padding-bottom: 7em;
+  text-align: center;
+  height: 200px;
 }
 
 .footer a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .footer a:hover {
-	color: var(--accent-color);
-	text-decoration: none;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 .footIcons {
-	padding: 4rem 7vw;
-	margin-top: 30px;
-	margin-bottom: 30px;
+  padding: 4rem 7vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .footIcons > a {
-	text-align: center;
-	margin-left: 5vw;
-	margin-right: 5vw;
-	font-size: 23px;
+  text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 23px;
 }
 
-.fa-chevron-right, .fa-chevron-left {
-	color: #57a3e4;
+.fa-chevron-right,
+.fa-chevron-left {
+  color: #57a3e4;
 }
 
 @media (max-width: 1400px) {
-	/* For Tablets */
-	h3 {
-		font-size: 2vw;
-	}
-	.portfolio {
-		padding: 2rem;
-	}
-	.glide {
-		padding: 0rem 5rem 0.5rem 5rem;
-	}
+  /* For Tablets */
+  h3 {
+    font-size: 2vw;
+  }
+  .portfolio {
+    padding: 2rem;
+  }
+  .glide {
+    padding: 0rem 5rem 0.5rem 5rem;
+  }
 }
 
-
-
 @media (max-width: 430px) {
-	/* For mobile phones: */
-	body {
-		width: 90%;
-	}
-	h1 {
-		font-size: 40px;
-	}
-	h2 {
-		font-size: 30px;
-	}
-	.landingL {
-		text-align: center;
-	}
-	.landingWrapper {
-		display: block;
-	}
-	.navIcons {
-		text-align: center;
-	}
-	.navIcons a {
-		margin-left: 13px;
-		margin-right: 13px;
-	}
-	.footIcons {
-		padding-right: 3vw;
-	}
-	.footIcons>a {
-		text-align: middle;
-		margin-left: 2vw;
-	}
-	p {
-		font-size: 15px;
-	}
-	.coolFont {
-		font-family: var(--font-Jaapoki);
-		font-size: 40px;
-	}
-	.aboutMe {
-		font-size: 100%;
-	}
-	.portfolio {
-		padding: 3rem;
-	}
-	.glide {
-		padding: 2vw;
-	}
-	h3 {
-		font-size: 4.3vw;
-	}
-	.footIcons {
-		padding-top: 1rem;
-		padding-bottom: 4rem;
-	}
-	.footIcons > a {
-		text-align: center;
-		margin-left: 5vw;
-		margin-right: 5vw;
-		font-size: 14px;
-	}
-	.project-skills {
-		display: none;
-	}
+  /* For mobile phones: */
+  body {
+    width: 90%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .landingL {
+    text-align: center;
+  }
+  .landingWrapper {
+    display: block;
+  }
+  .navIcons {
+    text-align: center;
+  }
+  .navIcons a {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+  .footIcons {
+    padding-right: 3vw;
+  }
+  .footIcons > a {
+    text-align: middle;
+    margin-left: 2vw;
+  }
+  p {
+    font-size: 15px;
+  }
+  .coolFont {
+    font-family: var(--font-Jaapoki);
+    font-size: 40px;
+  }
+  .aboutMe {
+    font-size: 100%;
+  }
+  .portfolio {
+    padding: 3rem;
+  }
+  .glide {
+    padding: 2vw;
+  }
+  h3 {
+    font-size: 4.3vw;
+  }
+  .footIcons {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+  .footIcons > a {
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 14px;
+  }
+  .project-skills {
+    display: none;
+  }
 }
